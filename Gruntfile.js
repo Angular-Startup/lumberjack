@@ -81,8 +81,8 @@ module.exports = function(grunt) {
 				},
 				build: {
 					files:  {},
-					src:    'erjack.js',
-					dest:   'erjack.min.js'
+					src:    'lumberjack.js',
+					dest:   'lumberjack.min.js'
 				}
 			}/*,
 			karma: {
@@ -93,15 +93,15 @@ module.exports = function(grunt) {
 				}
 			}*/
 		});
-		
-		
+
+
 		/**
 		register/define grunt tasks
 		@toc 6.
 		*/
 		// Default task(s).
 		grunt.registerTask('default', ['jshint:beforeconcatQ', 'uglify:build']);
-	
+
 	}
 	init({});		//initialize here for defaults (init may be called again later within a task)
 
