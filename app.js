@@ -22,7 +22,7 @@ config(['$routeProvider', '$locationProvider', '$compileProvider', function($rou
 	staticPath ='/';		//nodejs (local)
 	// staticPath ='/ng-lumberjack/';		//gh-pages
 	var appPathRoute ='/';
-	var pagesPath =staticPath+'/pages/';
+	var pagesPath =staticPath+'pages/';
 
 
 
