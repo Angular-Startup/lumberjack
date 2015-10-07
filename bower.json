@@ -1,20 +1,11 @@
 {
-	"name": "ng-lumberjack",
-	"version": "1.0.0",
+	"name": "ng-lumberjack-demo",
+	"version": "0.0.0",
 	"authors": [
 		"Jeremy Stover open-source@angular-startup.io"
 	],
-	"description": "AngularJs logger, for when you need to do real work",
+	"description": "Demo",
 	"keywords": [
-		"angular",
-		"angularjs",
-		"Angular",
-		"Angularjs",
-		"AngularJSlogging",
-		"logger",
-		"error",
-		"issue",
-		"notifier"
 	],
 	"license": "MIT",
 	"ignore": [
@@ -25,7 +16,10 @@
 		"tests"
 	],
 	"dependencies": {
-		"angular":"~1.2.0"
+		"angular":"~1.2.0",
+		"angular-sanitize":"~1.2.0",
+		"angular-route":"~1.2.0",
+		"angular-touch":"~1.2.0"
 	},
 	"devDependencies": {
 	}
