@@ -1,0 +1,32 @@
+{
+	"name": "ng-lumberjack",
+	"version": "1.0.0",
+	"authors": [
+		"Jeremy Stover open-source@angular-startup.io"
+	],
+	"description": "AngularJs logger, for when you need to do real work",
+	"keywords": [
+		"angular",
+		"angularjs",
+		"Angular",
+		"Angularjs",
+		"AngularJSlogging",
+		"logger",
+		"error",
+		"issue",
+		"notifier"
+	],
+	"license": "MIT",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"angular":"~1.2.0"
+	},
+	"devDependencies": {
+	}
+}
