@@ -15,7 +15,7 @@ config(['$routeProvider', '$locationProvider', '$compileProvider', function($rou
 	@toc 1.
 	*/
 	$locationProvider.html5Mode(false);		//can't use this with github pages / if don't have access to the server
-	
+
 	// var staticPath ='/';
 	var staticPath;
 	// staticPath ='/angular-services/ng-lumberjack/';		//local
@@ -23,10 +23,13 @@ config(['$routeProvider', '$locationProvider', '$compileProvider', function($rou
 	// staticPath ='/ng-lumberjack/';		//gh-pages
 	var appPathRoute ='/';
 	var pagesPath =staticPath+'pages/';
-	
-	
-	$routeProvider.when(appPathRoute+'home', {templateUrl: pagesPath+'home/home.html'});
+
+
+
+	$routeProvider
+	.when(appPathRoute+'home', {templateUrl: pagesPath+'home/home.html'})
+	.when(appPathRoute+'demo', {templateUrl: pagesPath+'demo/demo.html'});
 
 	$routeProvider.otherwise({redirectTo: appPathRoute+'home'});
-	
+
 }]);

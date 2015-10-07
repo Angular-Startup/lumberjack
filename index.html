@@ -2,23 +2,104 @@
 <html lang="en" ng-app="myApp">
 <head>
     <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
 
     <title>ng-lumberjack</title>
-
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
+  <!-- <nav class="light-blue lighten-1 row" role="navigation">
+    <div class="nav-wrapper container col s9 offset-s3"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav> -->
+  <div class="row">
+    <div class="col s3">
+      <div id="nav-mobile" class="side-nav fixed" style="width: 240px;">
+       <div class="row">
+         <div class="col s12">
+           <a id="logo-container" href="/" class="brand-logo center-align">
+             <img src="/images/jack.png" alt="Lumberjack" />
+             <div class="row">
+               <div class="col s12">
+                 <a class="link" href="#/demo">Demo</a>
+                 <a class="link" href="#/">Home</a>
+                 <a class="link" href="https://github.com/Angular-Startup/lumberjack">Github Repository</a>
+               </div>
+             </div>
+           </a>
+         </div>
+
+      </div>
+
+
+
+     </div>
+    </div>
+  </div>
 	<div ng-view></div>
+  <footer class="page-footer  row moss no-pad-bot">
+    <div class="container col s9 offset-s3">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
 
 	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
 	<script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
 	<script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
 	<script type="text/javascript" src="bower_components/angular-touch/angular-touch.min.js"></script>
-	
-	<script type="text/javascript" src="erjack.js"></script>
-	<!--<script type="text/javascript" src="erjack.min.js"></script>-->
-	
+  <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
+  <script type="text/javascript" src="bower_components/Materialize/dist/js/materialize.js" charset="utf-8"></script>
+  <script type="text/javascript" src="bower_components/moment/min/moment.min.js">
+
+  </script>
+
+	<script type="text/javascript" src="lumberjack.js"></script>
+	<!--<script type="text/javascript" src="lumbererjack.min.js"></script>-->
+
 	<script type="text/javascript" src="app.js"></script>
-	
+
 	<script type="text/javascript" src="pages/home/HomeCtrl.js"></script>
+  <script type="text/javascript" src="pages/demo/DemoCtrl.js"></script>
 </body>
 </html>

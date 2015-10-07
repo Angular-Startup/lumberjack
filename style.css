@@ -1,0 +1,25 @@
+.brand-logo > img{
+  width: 175px;
+  height: auto;
+}
+
+.water {
+  background-color: #59A9C2;
+}
+
+.water:hover {
+  background-color: #65878F;
+}
+
+.moss {
+  background-color: #6A5A15 !important;
+}
+
+.moss-text {
+  color: #6A5A15;
+}
+
+.side-nav .link:hover {
+  background-color: #65878F;
+  color: white;
+}
