@@ -42,7 +42,7 @@ angular.module('Angular Startup.ng-lumberjack', [])
 				var db = __jack.storage.data;
 				var push = function(){
 					db.push(obj);
-				}
+				};
 				if(save.all){
 					push();
 				}else {
@@ -90,32 +90,32 @@ angular.module('Angular Startup.ng-lumberjack', [])
 		logger: {
 			error: function(data){
 				if(__jack.config.show.all || __jack.config.show.error){
-					console.error(data.message, data.data)
+					console.error(data.message, data.data);
 				}
 			},
 			info: function(data){
 				if(__jack.config.show.all || __jack.config.show.info){
-					console.info(data.message, data.data)
+					console.info(data.message, data.data);
 				}
 			},
 			warning: function(data){
 				if(__jack.config.show.all || __jack.config.show.warning){
-					console.warn(data.message, data.data)
+					console.warn(data.message, data.data);
 				}
 			},
 			bigWarning: function(data){
 				if(__jack.config.show.all || __jack.config.show.vanity){
-					console.log(data.message, data.data)
+					console.log(data.message, data.data);
 				}
 			},
 			log: function(data){
 				if(__jack.config.show.all || __jack.config.show.log){
-					console.log(data.message, data.data)
+					console.log(data.message, data.data);
 				}
 			},
-			title: function(){
+			title: function(data){
 				if(__jack.config.show.all || __jack.config.show.vanity){
-					console.log(data.message, data.data)
+					console.log(data.message, data.data);
 				}
 			}
 		}
@@ -160,8 +160,8 @@ angular.module('Angular Startup.ng-lumberjack', [])
 					msg: "lumberjack log dump: ",
 					data: __jack.storage.data,
 					gen: "log"
-				})
-				__jack.logger.log(dataObj)
+				});
+				__jack.logger.log(dataObj);
 			}
 		}
 	};

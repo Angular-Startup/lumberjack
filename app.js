@@ -19,8 +19,8 @@ config(['$routeProvider', '$locationProvider', '$compileProvider', function($rou
 	// var staticPath ='/';
 	var staticPath;
 	// staticPath ='/angular-services/ng-lumberjack/';		//local
-	// staticPath ='/';		//nodejs (local)
-	staticPath ='/ng-lumberjack/';		//gh-pages
+	staticPath ='/';		//nodejs (local)
+	// staticPath ='/ng-lumberjack/';		//gh-pages
 	var appPathRoute ='/';
 	var pagesPath =staticPath+'/pages/';
 
