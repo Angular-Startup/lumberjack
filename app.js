@@ -32,4 +32,12 @@ config(['$routeProvider', '$locationProvider', '$compileProvider', function($rou
 
 	$routeProvider.otherwise({redirectTo: appPathRoute+'home'});
 
+}])
+.controller('HomeCtrl', ['$scope', 'asLumberJack', function($scope, asLumberJack) {
+	//TODO - put any directive code here
+
+}])
+.controller('DemoCtrl', ['$scope', 'asLumberJack', function($scope, asLumberJack) {
+	//TODO - put any directive code here
+
 }]);
